@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>phiếu bé ngoan</title>
+	<style>
+  		.hidden {
+   		 display: none;
+ 		 }
+	</style>
+</head>
+<body>
+    <h1 id="line1" class="hidden">Xin chào.</h1>
+    <p id="line2" class="hidden">Hôm nay.</p>
+    <p id="line3" class="hidden">Để ghi nhận những đóng góp to lớn và sự ngoan ngoãn của bạn Phạm Như .....</p>
+    <p id="line4" class="hidden">tôi đặc biệt gửi tặng bạn 1 món quà( nhận xog thì báo tui nhá) m</p> 
+    <p id="line5" class="hidden">
+	<a href="sn(5).html" target="_blank">Nhấn vào đây để xem thêm</a>
+    </p>
+    <script>
+        const lines = ["line1", "line2", "line3","line4","line5"];
+        lines.forEach((id, index) => {
+            setTimeout(() => {
+                document.getElementById(id).classList.remove("hidden");
+            }, index * 2500); 
+        });
+    </script>     
+</body>
+</html>
